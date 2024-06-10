@@ -20,7 +20,7 @@ public:
                 throw invalid_argument("Gender must be either 'male' or 'female'");
             }
         }
-        
+
     // Getters
     int getAge() const { return age; }
     string getName() const { return name; }
@@ -33,4 +33,14 @@ public:
 
     // Birthday function
     void birthday() { age++; }
+};
+
+class BodyBuilder : public Person {
+public:
+    BodyBuilder(int age, string name, string gender, double weight)
+        : Person(age, name, gender, weight) {}
+
+    void cut() { setWeight(getWeight() * 0.97); }
+    void bulk() { setWeight(getWeight() * 1.03); }
+    void lift() { setWeight(getWeight() * 1.01); }
 };
