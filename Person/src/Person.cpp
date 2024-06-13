@@ -19,3 +19,5 @@ void Person::setName(const string& newName) { name = newName; }
 void Person::setWeight(double newWeight) { weight = newWeight; }
 
 void Person::birthday() { age++; }
+
+

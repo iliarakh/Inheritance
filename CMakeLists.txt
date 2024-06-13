@@ -5,3 +5,4 @@ project(StudentRoot)
 
 add_subdirectory("Person")
 add_subdirectory("Program")
+add_subdirectory("Gym")
