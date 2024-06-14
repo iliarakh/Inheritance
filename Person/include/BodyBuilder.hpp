@@ -1,6 +1,6 @@
 #include "Person.hpp"
-#include <Movati.hpp>
-#include <Crunch.hpp>
+#include <Gym.hpp>
+
 
 class BodyBuilder : public Person {
 public:
@@ -9,15 +9,5 @@ public:
     void cut();
     void bulk();
     void lift();
-
-class BodyBuilder : public Person {
-public:
-    float doCardio(Gym& gym) override {
-        return 2 * Person::doCardio(gym); 
-    }
-
-    float doLift(Gym& gym) override {
-        return 2 * Person::doLift(gym); 
-    }
 
 };

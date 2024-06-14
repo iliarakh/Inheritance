@@ -1,5 +1,6 @@
 #include "BodyBuilder.hpp"
 #include <iostream>
+#include <Gym.hpp>
 
 
 int main() {

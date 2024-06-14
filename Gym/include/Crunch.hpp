@@ -1,6 +1,13 @@
-class Crunch : public Gym {
+#ifndef __INHERITANCE__CRUNCH__HPP__
+#define __INHERITANCE__CRUNCH__HPP__
 
+#include "Gym.hpp"
+
+
+class Crunch : public Gym {
 public:
-    float cardio() override {}
-    float lift() override {}
+    float cardio() const override;
+    float lift() const override;
 };
+
+#endif

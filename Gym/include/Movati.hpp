@@ -1,6 +1,8 @@
-class Movati : public Gym {
+#include "Gym.hpp"
 
+class Movati : public Gym {
 public:
-    float cardio() override {}
-    float lift() override {}
+    float cardio() const override;
+    float lift() const override;
 };
+

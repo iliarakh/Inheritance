@@ -1,9 +1,11 @@
+// Movati.cpp
+
 #include "Movati.hpp"
 
-float Movati::cardio() {
-    return -1.0;
+float Movati::cardio() const {
+    return -1.0f;
 }
 
-float Movati::lift() {
-    return 3.0;
+float Movati::lift() const {
+    return 3.0f;
 }

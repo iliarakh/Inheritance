@@ -1,9 +1,11 @@
+// Crunch.cpp
+
 #include "Crunch.hpp"
 
-float Crunch::cardio() {
-    return 3.0;
+float Crunch::cardio() const {
+    return -3.0f;
 }
 
-float Crunch::lift() {
-    return -1.0;
+float Crunch::lift() const {
+    return 1.0f;
 }

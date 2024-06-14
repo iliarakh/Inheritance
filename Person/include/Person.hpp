@@ -1,6 +1,5 @@
 #include <string>
-#include <Movati.hpp>
-#include <Crunch.hpp>
+#include <Gym.hpp>
 
 using namespace std;
 
@@ -28,13 +27,5 @@ public:
     // Birthday function
     void birthday();
 
-public:
-    float doCardio(Gym& gym) {
-        return gym.cardio();
-    }
-
-    float doLift(Gym& gym) {
-        return gym.lift();
-    }
-
+    
 };
