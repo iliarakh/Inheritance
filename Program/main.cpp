@@ -1,29 +1,28 @@
+#include "Crunch.hpp"
+#include "Movati.hpp"
 #include "BodyBuilder.hpp"
+#include "Person.hpp"
 #include <iostream>
-#include <Gym.hpp>
-
 
 int main() {
-    // Create a BodyBuilder object
-    BodyBuilder ronny(30, "Ronny Coleman", "male", 200.0);
+    
+    Crunch crunchGym;
+    Movati movatiGym;
+    
+    Person John(25, "John Max", "male", 170.0);
+    BodyBuilder Ronny(30, "Ronny Coleman", "male", 250.0);
 
-    // Display initial details
-    std::cout<< "Initial Details:\n";
-    std::cout << "Name: " << ronny.getName() << "\n";
-    std::cout << "Weight: " << ronny.getWeight() << "\n";
+    std::cout << "Person at Crunch Gym:\n";
+    std::cout << "Cardio: " << John.cardio(crunchGym) << "\n";    std::cout << "Lift: " << John.lift(crunchGym) << "\n";
 
-    // Perform cut, bulk, and lift operations
-    ronny.cut();
-    std::cout << "\nAfter cut:\n";
-    std::cout << "Weight: " << ronny.getWeight() << "\n";
+    std::cout << "BodyBuilder at Crunch Gym:\n";
+    std::cout << "Cardio: " << Ronny.cardio(crunchGym) << "\n";      std::cout << "Lift: " << Ronny.lift(crunchGym) << "\n";  
 
-    ronny.bulk();
-    std::cout << "\nAfter bulk:\n";
-    std::cout << "Weight: " << ronny.getWeight() << "\n";
+    std::cout << "Person at Movati Gym:\n";
+    std::cout << "Cardio: " << John.cardio(movatiGym) << "\n";    std::cout << "Lift: " << John.lift(movatiGym) << "\n";
 
-    ronny.lift();
-    std::cout << "\nAfter lift:\n";
-    std::cout << "Weight: " << ronny.getWeight() << "\n";
+    std::cout << "BodyBuilder at Movati Gym:\n";
+    std::cout << "Cardio: " << Ronny.cardio(movatiGym) << "\n";      std::cout << "Lift: " << Ronny.lift(movatiGym) << "\n";  
 
     return 0;
 }

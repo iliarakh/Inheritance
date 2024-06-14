@@ -1,3 +1,6 @@
+#ifndef __INHERITANCE__PERSON__HPP__
+#define __INHERITANCE__PERSON__HPP__
+
 #include <string>
 #include <Gym.hpp>
 
@@ -27,5 +30,8 @@ public:
     // Birthday function
     void birthday();
 
-    
+    virtual float lift(const Gym& gym) const;
+    virtual float cardio(const Gym& gym) const;
 };
+
+#endif

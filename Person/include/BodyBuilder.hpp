@@ -1,3 +1,7 @@
+#ifndef __INHERITANCE__BODYBUILDER__HPP__
+#define __INHERITANCE__BODYBUILDER__HPP__
+
+
 #include "Person.hpp"
 #include <Gym.hpp>
 
@@ -10,4 +14,9 @@ public:
     void bulk();
     void lift();
 
+
+    float lift(const Gym& gym) const override;
+    float cardio(const Gym& gym) const override;
 };
+
+#endif

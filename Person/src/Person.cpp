@@ -1,5 +1,7 @@
 #include "Person.hpp"
 #include <stdexcept>
+#include <Gym.hpp>
+
 
 Person::Person(int age, string name, string gender, double weight)
     : age(age), name(name), weight(weight) {
@@ -20,4 +22,11 @@ void Person::setWeight(double newWeight) { weight = newWeight; }
 
 void Person::birthday() { age++; }
 
+float Person::lift(const Gym& gym) const {
+    return gym.lift();
+}
+
+float Person::cardio(const Gym& gym) const {
+    return gym.cardio();
+}
 

@@ -1,4 +1,3 @@
-// Crunch.cpp
 
 #include "Crunch.hpp"
 
