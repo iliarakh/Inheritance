@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(StudentRoot)
+project(Inheritance)
 
 
 add_subdirectory("Person")

@@ -1,4 +1,4 @@
-project(Student)
+project(Person)
 
 add_library(${PROJECT_NAME} 
 	"include/BodyBuilder.hpp"
